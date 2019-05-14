@@ -259,7 +259,7 @@ def get_dataset(split, data_root=None, force_download=False, verify=True):
     dest_dir = os.path.join(split_root, label_name)
     _download_to_dir(image_ids, dest_dir)
 
-  _crop_and_resize_images(split_root)
-  if verify:
-    verify_dataset_integrity(split, data_root)
+  #_crop_and_resize_images(split_root)
+  #if verify:
+    #verify_dataset_integrity(split, data_root)
   return split_root
